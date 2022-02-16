@@ -16,6 +16,7 @@ function main() {
   })
 }
 
+// rgba color code generator for body background
 function colorGenerator() {
     const red = Math.floor(Math.random() *  255);
     const green = Math.floor(Math.random() *  255);
@@ -23,6 +24,7 @@ function colorGenerator() {
     return `rgba(${red}, ${green}, ${blue})`
 }
 
+// rgba color code generator for button background
 function colorGeneratorForButton() {
     const red = Math.floor(Math.random() *  255);
     const green = Math.floor(Math.random() *  255);
@@ -30,6 +32,7 @@ function colorGeneratorForButton() {
     return `rgba(${red}, ${green}, ${blue})`
 }
 
+// rgba color code generator for button font color
 function colorGeneratorForButtonFont() {
     const red = Math.floor(Math.random() *  255);
     const green = Math.floor(Math.random() *  255);
