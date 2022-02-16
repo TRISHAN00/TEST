@@ -5,6 +5,7 @@ window.onload = () => {
 function main() {
   const bodyColor = document.getElementById("bg-color");
   const btn = document.getElementById("color-btn");
+  const showColorCodeFormate = document.getElementById('showColorCodeText');
 
   btn.addEventListener('click', function() {
       const rgbaColorCode = colorGenerator();
@@ -14,11 +15,22 @@ function main() {
       const rgbaColorCodeForBtnFont = colorGeneratorForButtonFont()
       btn.style.color = rgbaColorCodeForBtnFont;
 
+    //   show color code formate
+    showColorCodeFormate.value = rgbaColorCode;
   })
 }
 
+
+
 // rgba color code generator for body background
 function colorGenerator() {
+    const red = Math.floor(Math.random() *  255);
+    const green = Math.floor(Math.random() *  255);
+    const blue = Math.floor(Math.random() *  255);
+    return `rgba(${red}, ${green}, ${blue})`
+}
+
+function colorGeneratorHex() {
     const red = Math.floor(Math.random() *  255);
     const green = Math.floor(Math.random() *  255);
     const blue = Math.floor(Math.random() *  255);

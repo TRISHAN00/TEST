@@ -10,7 +10,18 @@
   <body id="bg-color">
     <section class="content-area">
       <h2>Change the Background Color Clicking the Button</h2>
-      <button id="color-btn">Change Background</button>
+      <div class="value-area">
+        <input
+          id="showColorCodeText"
+          type="text"
+          value="rgba(0, 0, 0)"
+          readonly
+        />
+      </div>
+      <div class="button-area">
+        <button id="color-btn">Change Background</button>
+        <button id="copy">Copy</button>
+      </div>
     </section>
     <script src="index.js"></script>
   </body>
