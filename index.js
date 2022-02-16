@@ -13,6 +13,7 @@ function main() {
       btn.style.backgroundColor = rgbaColorCodeForBtn;
       const rgbaColorCodeForBtnFont = colorGeneratorForButtonFont()
       btn.style.color = rgbaColorCodeForBtnFont;
+
   })
 }
 
@@ -39,3 +40,4 @@ function colorGeneratorForButtonFont() {
     const blue = Math.floor(Math.random() *  255);
     return `rgba(${red}, ${green}, ${blue})`
 }
+
